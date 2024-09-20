@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Faboa Admin Panel - Code Audit and Refinement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository is for the task focuses on auditing and refining the existing codebase for the Faboa Admin Panel. The aim is to optimize the code, improve responsiveness, and ensure the design matches the Figma layout with pixel-perfect accuracy.
 
-In the project directory, you can run:
+## Task Objectives
 
-### `npm start`
+- **Code Audit**: Review and improve the structure, removing redundancies and optimizing performance.
+- **Responsive UI**: Ensure that the UI is fully responsive across all screen sizes and devices.
+- **Design Implementation**: Implement the design based on the provided Figma file with 100% pixel perfection.
+- **Static Columns**: Ensure that the "Full Name" column and the "Status," "Activity," and "Delete" columns remain static, while other content can scroll horizontally or vertically as required.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Design File
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Figma Design Link](https://www.figma.com/design/KG7dohmyexLIiWCJU4vxAt/Faboa-Admin-Panel---Test?node-id=1-7092&t=C4PjcSWqfGuvhQn3-1)
 
-### `npm test`
+## Code Audit Observations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Project Structure**: The structure is organized, but multiple libraries (MUI, Bootstrap, etc.) overlap. Consolidation would enhance maintainability.
+- **Theme Maintenance**: Styles are spread across multiple frameworks (CSS, Styled Components, Bootstrap, MUI, React Bootstrap). A unified approach (e.g., Tailwind CSS with Shad CN) is recommended for scalability and ease of future branding changes.
+- **Debugging**: Some console logs lack identifiers, making debugging challenging.
 
-### `npm run build`
+## Credentials for Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Email**: faboa123@mailinator.com
+- **Password**: hello
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components Worked On
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Members Component**: `src/screens/app/Members/index.jsx`
+- **PrivateRoutes Component`: `src/Routes/PrivateRoutes.jsx`
+- **Filters Component**: `src/components/Filter.jsx`
+- **StatusTabs Component**: `src/components/shareComponent/CustomTab.jsx`
+- **MainHeader Component**: `src/components/Header.jsx`
+- **CsvData Component**: `src/components/CsvData.jsx`
+- **TableView Component**: `src/components/Table.jsx`
 
-### `npm run eject`
+## Project Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure you have the following installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Node.js** (v16 or higher)
+- **npm** package manager
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation Steps
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/mdazlaanzubair/Faboa-Admin-Panel-Fix.git
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Navigate to the project directory:
 
-### Code Splitting
+   ```bash
+   cd faboa-admin-panel
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install the required dependencies
 
-### Analyzing the Bundle Size
+    *`[the project contains some deprecated dependencies so use --force flag to avoid errors]`*:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm install --force
+   ```
 
-### Making a Progressive Web App
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+5. Open your browser and navigate to:
+   ```bash
+   http://localhost:3000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any questions or further clarifications, feel free to reach out via [email at mdazlaan1996@gmail.com](mailto:mdazlaan1996@gmail.com).
